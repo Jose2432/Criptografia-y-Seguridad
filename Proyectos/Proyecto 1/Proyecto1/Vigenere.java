@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+ * Main para probar el Proyecto 2 Parte 1 Vigenere.
+ * @author Lázaro Pérez David Jonathan          No.cta 316059710
+ * @author Licona Gomez Aldo Daniel             No.cta 316263863
+ * @author Marín Parra José Guadalupe de Jesús  No.cta 316264176
+ */
 public class Vigenere{
 
   /**
