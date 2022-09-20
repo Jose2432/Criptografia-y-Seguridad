@@ -98,6 +98,7 @@ public class Vigenere{
     int opcion = 0;
     Scanner in = new Scanner(System.in);
     System.out.println("\n|||||||||||||||   B I E N V E N I D O   |||||||||||||||");
+    System.out.println("|||||||||||||||||   V I G E N E R E   |||||||||||||||||");
 
     do {
       System.out.println();
