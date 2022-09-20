@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Main para probar el Proyecto 2 Parte 2 Hill.
  * @author Lázaro Pérez David Jonathan          No.cta 316059710
  * @author Licona Gomez Aldo Daniel             No.cta 316263863
- * @author Marín Parra José Guadalupe de Jesús  No.cta 316264176  
+ * @author Marín Parra José Guadalupe de Jesús  No.cta 316264176
  */
 public class Hill
 {
@@ -584,33 +584,36 @@ public class Hill
     {
         String opt, phrase;
         Scanner keyboard = new Scanner(System.in,"ISO-8859-1");
-        System.out.println("\t\t\t*** Proyecto 1 PARTE 2 ***\n\t\t\t\t    HILL\n1.Cifrar con matriz 2x2\n2.Descifrar con matriz 2x2\n3.Cifrar con matriz 3x3\n4.Descifrar con matriz 3x3");
+        System.out.println("\n|||||||||||||||   B I E N V E N I D O   |||||||||||||||");
+        System.out.println("|||||||||||||||||||||   H I L L   |||||||||||||||||||||");
+        System.out.println("\nBienvenido\n¿Qué deseas hacer?");
+        System.out.println("1.Cifrar con matriz 2x2\n2.Descifrar con matriz 2x2\n3.Cifrar con matriz 3x3\n4.Descifrar con matriz 3x3");
         opt = keyboard.nextLine();
         switch (opt)
         {
             case "1":
-                System.out.print("Enter phrase to encrypt: ");
+                System.out.print("Introduce el mensaje que quieres cifrar 2x2: ");
                 phrase = keyboard.nextLine();
                 encrypt(phrase);
                 break;
 
             case "2":
-                System.out.print("Enter phrase to decrypt: ");
+                System.out.print("Introduce el mensaje cifrado 2x2: ");
                 phrase = keyboard.nextLine();
                 decrypt(phrase);
                 break;
 
             case "3":
-                System.out.print("Enter phrase to decrypt3x3: ");
+                System.out.print("Introduce el mensaje que quieres cifrar 3x3: ");
                 phrase = keyboard.nextLine();
                 encrypt3(phrase);
                 break;
 
             case "4":
-                System.out.print("Enter phrase to decrypt3x3: ");
+                System.out.print("Introduce el mensaje cifrado 3x3: ");
                 phrase = keyboard.nextLine();
                 decryptx3(phrase);
                 break;
         }
     }
-}   
+}
