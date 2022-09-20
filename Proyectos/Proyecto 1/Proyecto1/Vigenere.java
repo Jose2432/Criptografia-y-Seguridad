@@ -11,9 +11,7 @@ public class Vigenere{
   static String cifrar(String texto, String clave){
       String textoCifrado = "";
       for(int i=0; i < texto.length(); i++){
-        // converting in range 0-25
         int x = (texto.charAt(i) + clave.charAt(i)) % 26;
-        // convert into alphabets(ASCII)
         x += 'A';
         textoCifrado += (char)(x);
       }
@@ -29,9 +27,7 @@ public class Vigenere{
   static String descifrar(String textoCifrado, String clave){
       String textoOriginal = "";
       for (int i=0; i < textoCifrado.length() && i < clave.length(); i++){
-        // converting in range 0-25
         int x = (textoCifrado.charAt(i) - clave.charAt(i) + 26) % 26;
-        // convert into alphabets(ASCII)
         x += 'A';
         textoOriginal += (char)(x);
       }
